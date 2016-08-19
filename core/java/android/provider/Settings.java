@@ -4230,41 +4230,6 @@ public final class Settings {
         public static final String ANIMATION_IME_INTERPOLATOR = "animation_ime_interpolator";
 
         /**
-         * Timeout for ambient display notification
-         * @hide
-         */
-        public static final String DOZE_TIMEOUT = "doze_timeout";
-
-        /**
-         * Use pick up gesture sensor as doze pulse trigger
-         * @hide
-         */
-        public static final String DOZE_TRIGGER_PICKUP = "doze_trigger_pickup";
-
-        /**
-         * Use significant motion sensor as doze pulse trigger
-         * @hide
-         */
-        public static final String DOZE_TRIGGER_SIGMOTION = "doze_trigger_sigmotion";
-
-        /**
-         * Use notifications as doze pulse triggers
-         * @hide
-         */
-        public static final String DOZE_TRIGGER_NOTIFICATION = "doze_trigger_notification";
-
-        /**
-         * Follow pre-configured doze pulse repeat schedule
-         * @hide
-         */
-        public static final String DOZE_SCHEDULE = "doze_schedule";
-
-        /**
-         * Doze pulse screen brightness level
-         * @hide
-         */
-        public static final String DOZE_BRIGHTNESS = "doze_brightness";
-        /**
          * Change the screenshot delay
          * @hide
          */
@@ -4295,12 +4260,6 @@ public final class Settings {
          * @hide
          */
         public static final String HEADS_UP_FORCE_ALL = "heads_up_force_all";
-
-        /**
-         * Require double tap instead of simple tap to wake from Doze pulse screen
-         * @hide
-         */
-        public static final String DOZE_WAKEUP_DOUBLETAP = "doze_wakeup_doubletap";
 
         /**
          * Volume dialog stroke
@@ -7150,12 +7109,6 @@ public final class Settings {
          * @hide
          */
         public static final String DOZE_ENABLED = "doze_enabled";
-
-        /**
-         * Whether the device should color invert notifications when doze if enabled.
-         * @hide
-         */
-        public static final String DOZE_NOTIFICATION_INVERT_ENABLED = "doze_notification_invert_enabled";
 
         /**
          * Add or remove software navigation bar
