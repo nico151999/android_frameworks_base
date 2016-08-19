@@ -25,6 +25,8 @@ import com.android.server.lights.LightsManager;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
+import android.content.ComponentName;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
