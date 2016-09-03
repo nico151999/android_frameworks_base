@@ -2984,7 +2984,7 @@ public class NotificationPanelView extends PanelView implements
             mQSStroke = Settings.System.getInt(mContext.getContentResolver(),
                         Settings.System.QS_STROKE, 1);
             mCustomStrokeColor = Settings.System.getInt(mContext.getContentResolver(),
-                        Settings.System.QS_STROKE_COLOR, mContext.getResources().getColor(R.color.system_bar_background_transparent));
+                        Settings.System.QS_STROKE_COLOR, mContext.getResources().getColor(R.color.system_bar_background_semi_transparent));
             mCustomStrokeThickness = Settings.System.getInt(mContext.getContentResolver(),
                         Settings.System.QS_STROKE_THICKNESS, 4);
             mCustomCornerRadius = Settings.System.getInt(mContext.getContentResolver(),
@@ -3013,13 +3013,13 @@ public class NotificationPanelView extends PanelView implements
         if (mQsContainer != null) {
             if (mQSStroke == 0) {
                 /*qSGd.setColor(mContext.getResources().getColor(R.color.system_primary_color));
-                qSGd.setStroke(0, mContext.getResources().getColor(R.color.system_bar_background_transparent));
+                qSGd.setStroke(0, mContext.getResources().getColor(R.color.system_bar_background_semi_transparent));
                 qSGd.setCornerRadius(mCustomCornerRadius);
                 mQsContainer.setBackground(qSGd);*/
                 // Don't do anything when disabled, it fucks up themes that use drawable instead of color
             } else if (mQSStroke == 1) { // use accent color for border
                 qSGd.setColor(mContext.getResources().getColor(R.color.system_primary_color));
-                qSGd.setStroke(mCustomStrokeThickness, mContext.getResources().getColor(R.color.system_bar_background_transparent),
+                qSGd.setStroke(mCustomStrokeThickness, mContext.getResources().getColor(R.color.system_bar_background_semi_transparent),
                         mCustomDashWidth, mCustomDashGap);
             } else if (mQSStroke == 2) { // use custom border color
                 qSGd.setColor(mContext.getResources().getColor(R.color.system_primary_color));
