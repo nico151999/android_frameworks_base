@@ -1196,7 +1196,7 @@ public class VolumeDialog {
         mVolumeDialogStroke = Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.VOLUME_DIALOG_STROKE, 1);
         mCustomStrokeColor = Settings.System.getInt(mContext.getContentResolver(),
-                    Settings.System.VOLUME_DIALOG_STROKE_COLOR, mContext.getResources().getColor(R.color.system_accent_color));
+                    Settings.System.VOLUME_DIALOG_STROKE_COLOR, mContext.getResources().getColor(R.color.system_bar_background_semi_transparent));
         mCustomStrokeThickness = Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.VOLUME_DIALOG_STROKE_THICKNESS, 4);
         mCustomCornerRadius = Settings.System.getInt(mContext.getContentResolver(),
@@ -1210,12 +1210,12 @@ public class VolumeDialog {
 
         if (mVolumeDialogStroke == 0) { // Disable by setting border thickness to 0
             volumeDialogGd.setColor(mContext.getResources().getColor(R.color.system_primary_color));
-            volumeDialogGd.setStroke(0, mContext.getResources().getColor(R.color.system_accent_color));
+            volumeDialogGd.setStroke(0, mContext.getResources().getColor(R.color.system_bar_background_semi_transparent));
             volumeDialogGd.setCornerRadius(mCustomCornerRadius);
             mDialogView.setBackground(volumeDialogGd);
         } else if (mVolumeDialogStroke == 1) { // use accent color for border
             volumeDialogGd.setColor(mContext.getResources().getColor(R.color.system_primary_color));
-            volumeDialogGd.setStroke(mCustomStrokeThickness, mContext.getResources().getColor(R.color.system_accent_color),
+            volumeDialogGd.setStroke(mCustomStrokeThickness, mContext.getResources().getColor(R.color.system_bar_background_semi_transparent),
                     mCustomDashWidth, mCustomDashGap);
         } else if (mVolumeDialogStroke == 2) { // use custom border color
             volumeDialogGd.setColor(mContext.getResources().getColor(R.color.system_primary_color));
